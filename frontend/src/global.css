@@ -1,0 +1,51 @@
+/* frontend/src/global.css */
+* {
+    box-sizing: border-box;
+  }
+   
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* 隐藏水平滚动条 */
+  }
+   
+  .app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+  }
+   
+  .app-container {
+    padding-top: 60px; /* 根据 header 的高度调整 */
+    padding-bottom: 60px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    
+  }
+  .nav-button {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 1000;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+   
+  .nav-button:hover {
+    background-color: #0056b3;
+  }
+
+ 

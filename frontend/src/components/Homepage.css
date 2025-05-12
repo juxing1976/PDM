@@ -1,0 +1,91 @@
+/* frontend/src/components/Homepage.css */
+/* 页面标题样式 */
+.app-container{
+  height:100vh;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  background: var(--background);
+  display: flex;
+  flex-direction:column;
+  align-items: var(--align-itmes);
+  justify-content: center;
+
+}
+
+.homepage-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+   
+  /* 提示信息样式 */
+  .homepage-prompt {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+   /* 操作列表样式 */
+  .homepage-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  /* 操作按钮样式 */
+  .action-button {
+    display: inline-block;
+    width: 160px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+   
+  .action-button:hover {
+    background-color: #0056b3;
+  }
+   
+  
+   
+  .homepage-list-item {
+    margin-bottom: 10px 20px;
+  }
+  /* 页面标题样式 */
+  .homepage-title h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .home-page h3 {
+    /* text-align: center; */
+    font-weight: bold;
+    font-size: 14px;
+    /* margin-bottom: 20px; */
+    margin-bottom: 1rem;
+  }
+
+  /* 欢迎信息样式 */
+  .welcome-message {
+    text-align: center;
+  }
+   
+  /* 提示信息样式 */
+  .home-page p {
+    /* font-size: 16px; */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  /* 操作列表样式 */
+   .home-page ul {
+    list-style-type: none;
+    padding: 0;
+  }
+   
+  .home-page li {
+    margin-bottom: 10px;
+  }
+   

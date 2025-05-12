@@ -1,0 +1,29 @@
+# 第一阶段：构建阶段 
+FROM node:23-slim AS builder 
+WORKDIR /app
+ 
+# 复制 package.json 和 package-lock.json
+COPY package*.json ./
+ 
+# 安装依赖
+RUN npm install
+ 
+# 复制源代码
+COPY . .
+ 
+# 构建项目
+RUN npm run build 
+ 
+# 第二阶段：运行阶段
+FROM node:23-slim 
+WORKDIR /app
+ 
+# 从构建阶段复制必要的文件
+COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/dist ./dist 
+ 
+# 安装生产环境依赖
+RUN npm install --production 
+ 
+# 启动命令
+CMD ["npm", "start"]

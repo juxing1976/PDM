@@ -1,0 +1,24 @@
+/* src/components/NavButton.css */
+
+/* nav-button 样式 */
+
+/* 公共样式 */
+/* .common-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+.nav-button {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 1000;
+    /* 继承公共样式 */
+  /* }
+.nav-button:hover {
+    background-color: #0056b3;
+/* } */ 

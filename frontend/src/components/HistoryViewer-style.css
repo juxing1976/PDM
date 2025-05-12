@@ -1,0 +1,27 @@
+/* 历史记录查看器容器样式 */
+.history-viewer {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+   
+  /* 搜索框样式 */
+  .history-search-input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+   
+  /* 历史记录列表样式 */
+  .history-list {
+    list-style-type: none;
+    padding: 0;
+  }
+   
+  /* 历史记录项样式 */
+  .history-item {
+    margin-bottom: 5px;
+    padding: 5px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+  }

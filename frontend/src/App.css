@@ -1,0 +1,176 @@
+/* 全局容器样式 */
+
+:root{
+  --font-family: 'Segoe UI', sans-serif;
+  --font-size: 20px;
+  --text-color: #4a4a4a;
+  --padding: 20px;
+  --border-radius: 4px;
+  --background: #b1b8acc6;
+  --align-items: flex-start;
+}
+
+body {
+  margin: 0; /* 移除默认边距 */
+  padding: 0;
+  background-image: url('/Users/jx/Docs/PDM/projects/pdm_shared/frontend/images/lightblue.jpg'); /* 替换为你的图片路径 */
+  background-size: cover; /* 自动调整图片大小以覆盖整个页面 */
+  background-position: center; /* 图片居中 */
+  background-repeat: no-repeat; /* 防止图片重复 */
+  background-attachment: fixed; /* 背景固定 */
+}
+
+/* 组件样式 */
+.app-container{
+  padding-top: 60px; /* 根据 header 的高度调整 */
+  min-height: 100vh; /* 确保容器高度至少为视口高度 */
+  box-sizing: border-box; /* 包含 padding 和 border */
+  /* height:100vh; */
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  /* padding: var(--padding); */
+  border-radius: var(--border-radius);
+  background: var(--background);
+  display: flex;
+  flex-direction:column;
+  align-items: var(--align-itmes);
+  justify-content: center;
+  position: relative; /* 确保子元素可以相对于其定位 */
+
+}
+
+.app-header {
+  position: fixed; /* 固定定位 */
+  top: 0; /* 距离顶部 0px */
+  left: 0; /* 距离左侧 0px */
+  width: 100%; /* 宽度为 100% */
+  z-index: 1000; /* 确保覆盖其他内容 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 左右对齐内容 */
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  border-radius: var(--border-radius); /* 使用全局变量 */
+}
+  /* 操作提示样式 */
+  .operation-prompt {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: var(--font-size);
+    padding: 10px;
+  
+  }
+  /* 操作列表样式 */
+  .operation-list {
+    list-style-type: none;
+    padding: 10px;
+    margin-left:2em;
+  }
+  /* 操作条目样式 */
+  .operation-item {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* 页面标题样式 */
+  .home-page h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .home-page h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  /* 欢迎信息样式 */
+  .welcome-message {
+    text-align: center;
+  }
+  .submenu {
+    /* list-style-type: none; */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 14px;
+  }
+   
+   
+  /* 操作按钮样式 */
+  .action-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+   
+  .action-button:hover {
+    background-color: #0056b3;
+  }
+
+
+ 
+  /* 链接样式 */
+  .operation-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+ 
+ 
+.home-page-button:hover {
+  background-color: #0056b3;
+}
+
+
+.logo-container {
+  width: 100px; /* 设置固定宽度 */
+  height: auto;
+  display: flex;
+  /* align-items: center; */
+}
+
+.logo {
+  width: 50px; /* 设置固定宽度 */
+  height: auto; /* 自动调整高度以保持比例 */
+  margin-right: 10px;
+}
+/* 公共样式 */
+.common-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* prompt-button 样式 */
+.prompt-button {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  /* 继承公共样式 */
+}
+
+/* nav-button 样式 */
+.nav-button {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 1000;
+  /* 继承公共样式 */
+}
+ 
+.prompt-button:hover {
+  background-color: #0056b3;
+}

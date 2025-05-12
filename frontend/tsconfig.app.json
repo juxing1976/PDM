@@ -1,0 +1,33 @@
+// pdm-system/frontend/tsconfig.app.json
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+      "composite": true, // 启用复合编译 
+      "tsBuildInfoFile": "./.tmp/tsconfig.app.tsbuildinfo",
+      "target": "ES2020", // 调整为目标环境支持的版本
+  
+      "lib": ["ES2020", "DOM", "DOM.Iterable"], // 保留现有库支持
+      "module": "ESNext", // 与 Vite 的模块系统一致 
+      "skipLibCheck": true,
+      "declaration": true,
+      "declarationDir": "./build/frontend/types", // 修改类型声明输出目录 
+      "outDir": "./build", // 修改编译输出目录
+      "rootDir": "./",
+      "moduleResolution": "node", // 使用默认模块解析策略
+      "experimentalDecorators": true, // 启用实验性装饰器支持
+      "emitDecoratorMetadata": true, // 启用装饰器元数据支持
+      "useDefineForClassFields": false, // 回退到 Stage 2 语法
+      "allowSyntheticDefaultImports": true,
+      "isolatedModules": true,
+      "noEmit": false,
+      "jsx": "react-jsx", // 如果项目使用 React，保留此设置
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noFallthroughCasesInSwitch": true,
+      "noUncheckedSideEffectImports": true,
+      "typeRoots": ["./node_modules/@types", "./types"] // 类型隔离
+    },
+    "include": ["src/**/*", "vite.config.ts"],
+    "exclude": ["node_modules"]
+}

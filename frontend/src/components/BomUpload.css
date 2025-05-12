@@ -1,0 +1,52 @@
+/* 容器样式 */
+.upload-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+   
+  /* Dropzone 样式 */
+  .dropzone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+   
+  .dropzone.active {
+    border-color: #28a745;
+    background-color: #f0ffed;
+  }
+   
+  /* 按钮样式 */
+  .upload-button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+   
+  .upload-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+   
+  .upload-button:hover:not(:disabled) {
+    background-color: #218838;
+  }
+   
+  /* 消息样式 */
+  .message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6c757d;
+  }

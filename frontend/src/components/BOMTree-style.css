@@ -1,0 +1,161 @@
+/* frontend/src/components/BOMTree-style.css */
+/* frontend/src/components/BOMTree-style.css */
+ 
+/* 容器样式 */
+.bom-tree-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+ 
+/* 提示信息样式 */
+.bom-tree-alert {
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+ 
+/* 树节点样式 */
+.bom-tree-node {
+  padding: 8px;
+  margin: 4px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+ 
+.bom-tree-node.drag-over {
+  background-color: lightblue;
+  border-color: blue;
+}
+ 
+.bom-tree-node:hover {
+  background-color: #f0f0f0;
+}
+ 
+/* 按钮样式 */
+.bom-tree-button {
+  margin-left: 8px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+ 
+.bom-tree-button.edit-button {
+  background-color: #28a745;
+  color: white;
+}
+ 
+.bom-tree-button.edit-button:hover {
+  background-color: #218838;
+}
+ 
+.bom-tree-button.undo-button {
+  background-color: #007bff;
+  color: white;
+}
+ 
+.bom-tree-button.undo-button:hover {
+  background-color: #0056b3;
+}
+ 
+.bom-tree-button.redo-button {
+  background-color: #ffc107;
+  color: black;
+}
+ 
+.bom-tree-button.redo-button:hover {
+  background-color: #e0a800;
+}
+ 
+.bom-tree-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+ 
+/* 搜索输入框样式 */
+.bom-tree-search-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+ 
+.bom-tree-search-input:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+ 
+/* 提示框背景遮罩 */
+.bom-tree-prompt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* 确保遮罩在最上层 */
+}
+ 
+/* 提示框主体 */
+.bom-tree-prompt-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  text-align: center;
+  width: 300px; /* 固定宽度 */
+}
+ 
+/* 提示信息 */
+.bom-tree-prompt-box p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #333;
+}
+ 
+/* 按钮容器 */
+.bom-tree-prompt-box div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.root-selection-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+/* 输入框样式 */
+.root-id-input {
+  margin-bottom: 10px; /* 下边距 */
+  padding: 5px; /* 内边距 */
+  width: 60%; /* 宽度 */
+  height: 30px; /* 固定高度（可调整） */
+  box-sizing: border-box; /* 确保 padding 不影响宽度 */
+}
+ 
+/* 按钮样式 */
+.confirm-root-button {
+  margin-bottom: 10px; /* 下边距 */
+  height: 30px; /* 与输入框高度一致 */
+  line-height: 30px; /* 垂直居中文字 */
+  padding: 0 10px; /* 按钮左右内边距 */
+  margin-left: 10px; /* 左间距 */
+  vertical-align: bottom; /* 垂直对齐 */
+  box-sizing: border-box; /* 确保 padding 不影响宽度 */
+}

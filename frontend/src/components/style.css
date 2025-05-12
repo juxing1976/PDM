@@ -1,0 +1,29 @@
+/* styles.css */
+ 
+/* 头部样式 */
+.header {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;    /* 垂直居中 */
+    height: 100px;          /* 设置头部高度 */
+    background-color: #f8f9fa; /* 背景色 */
+}
+ 
+/* Logo 容器样式 */
+.logo-container {
+    display: flex;
+    align-items: center;
+    max-width: 200px; /* 设置最大宽度 */
+    height: auto;    /* 自动调整高度 */
+    
+    display: block; /* 确保图片可见 */
+    visibility: visible;
+    
+    
+}
+ 
+/* Logo 样式 */
+.logo {
+    max-width: 50px;       /* 设置最大宽度 */
+    height: auto;           /* 保持宽高比例 */
+}

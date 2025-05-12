@@ -1,0 +1,16 @@
+//pdm-system/tsconfig.json
+
+{
+  "references": [
+    { "path": "./frontend/tsconfig.app.json" },
+    { "path": "./backend/tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "typeRoots": [
+      "../node_modules/@types", // 默认类型定义路径
+    ],
+    "strict": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

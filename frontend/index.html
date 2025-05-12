@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>PDM 系统 - 产品全寿命周期管理</title>
+  <link rel="sytlesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .upload-container {
+      margin-bottom: 20px;
+    }
+    .dropzone {
+      border: 2px dashed #ccc;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.3s;
+    }
+    .dropzone.active {
+      border-color: #007bff;
+    }
+    .upload-button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .upload-button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    .message {
+      margin-top: 10px;
+      color: green;
+    }
+    .tree-node {
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin-bottom: 5px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+    .tree-node.drag-over {
+      background-color: #e6f7ff;
+    }
+    .prompt-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .prompt-box {
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="root"></div>
+ 
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

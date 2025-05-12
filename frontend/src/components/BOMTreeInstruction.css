@@ -1,0 +1,90 @@
+/* # 样式优化与整合
+ 
+为了确保新增的样式局部生效，避免覆盖全局样式，并与现有的 `BOMTreeInstruction.css` 文件进行整合，我们可以采取以下策略：
+ 
+1. **选择器的特定性**：通过增加父级类名 `.instruction-page` 来提高选择器的特定性，确保样式仅应用于 `BOMTreeInstruction` 组件。
+2. **样式分离**：将新增的样式与现有样式分开定义，但保持在同一文件中，以确保逻辑清晰且易于维护。
+ 
+以下是优化后的完整样式文件：
+ 
+## 优化后的 `BOMTreeInstruction.css` */
+
+/* 容器样式 */
+.instruction-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;/* 父容器保持居中对齐 */
+}
+ 
+/* 标题样式 */
+.instruction-page h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+ 
+/* 提示信息样式 */
+.instruction-page p {
+    color: #555;
+    margin-bottom: 10px;
+}
+ 
+/* 步骤列表样式 */
+.instruction-page ol {
+  padding-left: 0; /* 移除左侧内边距 */
+  margin-bottom: 20px;
+  color: #444;
+  text-align: left; /* 设置文本靠左对齐 */
+}
+ 
+.instruction-page li {
+  margin-bottom: 8px;
+  text-align: left; /* 确保列表项也靠左对齐 */
+}
+ 
+/* 按钮样式 */
+.instruction-page .continue-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745; /* 绿色背景 */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+ 
+.instruction-page .continue-button:hover {
+    background-color: #218838; /* 悬停时更深的绿色 */
+}
+ 
+/* 确认对话框样式 */
+.instruction-page .confirmation-dialog {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    text-align: center;
+}
+ 
+.instruction-page .confirmation-dialog p {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #333;
+}
+ 
+/* 取消按钮样式 */
+.instruction-page .cancel-button {
+    margin-left: 8px;
+    padding: 4px 8px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+.instruction-page .cancel-button:hover {
+    background-color: #bd2130;
+}
