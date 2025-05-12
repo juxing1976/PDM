@@ -1,3 +1,4 @@
+///Users/jx/Docs/PDM/projects/pdm_shared/pdm-system/frontend/vite.config.ts
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
