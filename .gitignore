@@ -1,3 +1,15 @@
+# 忽略前端构建产物 
+/frontend/node_modules/
+/frontend/dist/ 
+/frontend/.next/    # Next.js 项目
+/frontend/.nuxt/    # Nuxt.js 项目 
+ 
+# 忽略后端构建产物 
+/backend/node_modules/
+/backend/build/ 
+/backend/logs/
+/backend/**/*.env*       # 环境变量文件（敏感信息）
+
 # Logs
 logs
 *.log

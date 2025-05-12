@@ -1,4 +1,0 @@
-# 忽略日志、本地配置与 Git 文件  
-*.log   
-.git  
-node_modules
